@@ -1,0 +1,24 @@
+        <table id="ventaTable">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Producto</th>
+                    <th>Cantidad (kg/u)</th>
+                    <th>Precio ($)</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Contenido dinámico -->
+            </tbody>
+        </table>
+        <div class="total-section">
+            Total: $<span id="total">0.00</span>
+        </div>
+        <div class="detalle-section" id="detalleSection">
+            <!-- Detalle automático -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>,

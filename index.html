@@ -1,0 +1,44 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DJ Moder 2414</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>DJ Moder 2414</h1>
+        <div class="button-container">
+            <button onclick="seleccionarProducto('Puerco', 500)">Puerco ($500/kg)</button>
+            <button onclick="seleccionarProducto('Chicharrón', 500)">Chicharrón ($500/kg)</button>
+            <button onclick="seleccionarProducto('Agua', 25)">Agua ($25/u)</button>
+            <button onclick="seleccionarProducto('Refresco', 40)">Refresco ($40/u)</button>
+            <button onclick="seleccionarProducto('Casabe', 100)">Casabe ($100/u)</button>
+        </div>
+        <div class="input-section">
+            <input type="number" id="cantidadInput" placeholder="Cantidad (kg/u)" oninput="agregarProducto()">
+        </div>
+        <table id="ventaTable">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Producto</th>
+                    <th>Cantidad (kg/u)</th>
+                    <th>Precio ($)</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Contenido dinámico -->
+            </tbody>
+        </table>
+        <div class="total-section">
+            Total: $<span id="total">0.00</span>
+        </div>
+        <div class="detalle-section" id="detalleSection">
+            <!-- Detalle automático -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>,
